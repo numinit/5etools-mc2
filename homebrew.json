@@ -1,0 +1,358 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MEAD",
+				"abbreviation": "MEAD",
+				"full": "Meadiocrity Homebrew v2.0-beta5",
+				"url": "https://discord.gg/K47EvCv8dn",
+				"authors": [
+					"Meadiocrity DM Team"
+				],
+				"convertedBy": [
+					"numinit",
+					"gr33tz to the Meadiocrity players"
+				],
+				"color": "#dc8add"
+			}
+		]
+	},
+	"race": [
+		{
+			"name": "Aarakocra",
+			"source": "MEAD",
+			"page": 3,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"fly": false
+			},
+			"traitTags": [
+				"Natural Weapon"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": [
+							"gust of wind"
+						]
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Glide",
+					"entries": [
+						"When you fall at least 10 feet above the ground, you can use your reaction to extend your skin membranes to glide horizontally a number of feet equal to your walking speed, and you take 0 damage from the fall. You determine the direction of the glide."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Talons",
+					"entries": [
+						"You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wind Caller",
+					"entries": [
+						"Starting at 3rd level, you can cast the {@spell gust of wind} spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for when you cast {@spell gust of wind} with this trait (choose when you select this race)."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			]
+		},
+		{
+			"name": "Fairy",
+			"source": "MEAD",
+			"page": 3,
+			"lineage": "VRGR",
+			"creatureTypes": [
+				"fey"
+			],
+			"size": [
+				"S"
+			],
+			"speed": {
+				"walk": 30,
+				"fly": false
+			},
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"faerie fire"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"enlarge/reduce"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"druidcraft#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Creature Type",
+					"entries": [
+						"You are a Fey."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fairy Magic",
+					"entries": [
+						"You know the {@spell druidcraft} cantrip. Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Starting at 5th level, you can also cast the {@spell enlarge/reduce} spell with this trait. Once you cast {@spell faerie fire} or {@spell enlarge/reduce} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Glide",
+					"entries": [
+						"When you fall at least 10 feet above the ground, you can use your reaction to extend your skin membranes to glide horizontally a number of feet equal to your walking speed, and you take 0 damage from the fall. You determine the direction of the glide."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			]
+		},
+		{
+			"name": "Myconid",
+			"source": "MEAD",
+			"page": 3,
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 70,
+				"heightMod": "2d10",
+				"baseWeight": 80,
+				"weightMod": "2d4"
+			},
+			"age": {
+				"mature": 30,
+				"max": 600
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Myconids reach adulthood in their thirties and live several centuries."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Myconids are usually 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can read and write Common and Sylvan, but cannot speak."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"name": "Feat",
+					"entries": [
+						"You gain the {@feat rapport spores|mc2} feat."
+					],
+					"type": "entries"
+				}
+			],
+			"ability": [
+				{
+					"con": 1,
+					"wis": 1
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"con",
+								"wis"
+							],
+							"weights": [
+								2
+							]
+						}
+					}
+				}
+			],
+			"raceName": "Myconid",
+			"raceSource": "MEAD",
+			"feats": [
+				{
+					"RapportSpores": 1
+				}
+			]
+		}
+	],
+	"monster": [],
+	"feat": [
+		{
+			"name": "Rapport Spores",
+			"source": "MEAD",
+			"page": 3,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "myconid"
+						}
+					]
+				}
+			],
+			"entries": [
+				"Myconids cannot speak, but use their spores to communicate telepathically. Travelers to Boletia are often struck by the silence of the city periodically broken by hails in their mind. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You may as an action, extend rapport spores in a 20-foot radius. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren’t undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
+					]
+				}
+			]
+		}
+	]
+}
