@@ -7,8 +7,8 @@ To import all this campaign's available content, go to https://5e.tools and clic
 - rc1 (2023-08-20)
     - Create the Meadiocrity Campaign Companion, a book compiling information about the story and homebrew rules.
     - Update Aarakocra and Fairy homebrew races to add Limited Flight feature.
-    - Blocklist backgrounds from Bigby's Glory of the Giants, since they provide feats.
-    - Add approved backgrounds from Sword Coast Adventurer's Guide and Van Richten's Guide to Ravenloft. Note that feats and classes are not blocklisted.
+    - Blocklist backgrounds from Bigby's Glory of the Giants, since they provide feats. Note that feats and classes from BGG are **not** blocklisted.
+    - Add approved backgrounds from Sword Coast Adventurer's Guide and Van Richten's Guide to Ravenloft. Note that feats, classes, etc from SCAG and VRGR are still blocklisted.
     - Blocklist races that were updated by Monsters of the Multiverse. Now only the revised versions are shown.
     - Add build system to export a homebrew compendium alongside the statefile.
 - beta5 (2023-07-30)
