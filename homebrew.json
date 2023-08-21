@@ -1,358 +1,495 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "MEAD",
-				"abbreviation": "MEAD",
-				"full": "Meadiocrity Homebrew v2.0-beta5",
-				"url": "https://discord.gg/K47EvCv8dn",
-				"authors": [
-					"Meadiocrity DM Team"
-				],
-				"convertedBy": [
-					"numinit",
-					"gr33tz to the Meadiocrity players"
-				],
-				"color": "#dc8add"
-			}
-		]
-	},
-	"race": [
-		{
-			"name": "Aarakocra",
-			"source": "MEAD",
-			"page": 3,
-			"lineage": "VRGR",
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30,
-				"fly": false
-			},
-			"traitTags": [
-				"Natural Weapon"
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"3": [
-							"gust of wind"
-						]
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Glide",
-					"entries": [
-						"When you fall at least 10 feet above the ground, you can use your reaction to extend your skin membranes to glide horizontally a number of feet equal to your walking speed, and you take 0 damage from the fall. You determine the direction of the glide."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Talons",
-					"entries": [
-						"You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Wind Caller",
-					"entries": [
-						"Starting at 3rd level, you can cast the {@spell gust of wind} spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for when you cast {@spell gust of wind} with this trait (choose when you select this race)."
-					]
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"anyStandard": 1
-				}
-			]
-		},
-		{
-			"name": "Fairy",
-			"source": "MEAD",
-			"page": 3,
-			"lineage": "VRGR",
-			"creatureTypes": [
-				"fey"
-			],
-			"size": [
-				"S"
-			],
-			"speed": {
-				"walk": 30,
-				"fly": false
-			},
-			"additionalSpells": [
-				{
-					"innate": {
-						"3": {
-							"daily": {
-								"1": [
-									"faerie fire"
-								]
-							}
-						},
-						"5": {
-							"daily": {
-								"1": [
-									"enlarge/reduce"
-								]
-							}
-						}
-					},
-					"ability": {
-						"choose": [
-							"int",
-							"wis",
-							"cha"
-						]
-					},
-					"known": {
-						"1": [
-							"druidcraft#c"
-						]
-					}
-				}
-			],
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Creature Type",
-					"entries": [
-						"You are a Fey."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Fairy Magic",
-					"entries": [
-						"You know the {@spell druidcraft} cantrip. Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Starting at 5th level, you can also cast the {@spell enlarge/reduce} spell with this trait. Once you cast {@spell faerie fire} or {@spell enlarge/reduce} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Glide",
-					"entries": [
-						"When you fall at least 10 feet above the ground, you can use your reaction to extend your skin membranes to glide horizontally a number of feet equal to your walking speed, and you take 0 damage from the fall. You determine the direction of the glide."
-					]
-				}
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"ability": [
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								2,
-								1
-							]
-						}
-					}
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"str",
-								"dex",
-								"con",
-								"int",
-								"wis",
-								"cha"
-							],
-							"weights": [
-								1,
-								1,
-								1
-							]
-						}
-					}
-				}
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"anyStandard": 1
-				}
-			]
-		},
-		{
-			"name": "Myconid",
-			"source": "MEAD",
-			"page": 3,
-			"size": [
-				"M"
-			],
-			"speed": 30,
-			"heightAndWeight": {
-				"baseHeight": 70,
-				"heightMod": "2d10",
-				"baseWeight": 80,
-				"weightMod": "2d4"
-			},
-			"age": {
-				"mature": 30,
-				"max": 600
-			},
-			"languageProficiencies": [
-				{
-					"common": true,
-					"sylvan": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Myconids reach adulthood in their thirties and live several centuries."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Myconids are usually 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
-					]
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can read and write Common and Sylvan, but cannot speak."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
-					]
-				},
-				{
-					"name": "Feat",
-					"entries": [
-						"You gain the {@feat rapport spores|mc2} feat."
-					],
-					"type": "entries"
-				}
-			],
-			"ability": [
-				{
-					"con": 1,
-					"wis": 1
-				},
-				{
-					"choose": {
-						"weighted": {
-							"from": [
-								"con",
-								"wis"
-							],
-							"weights": [
-								2
-							]
-						}
-					}
-				}
-			],
-			"raceName": "Myconid",
-			"raceSource": "MEAD",
-			"feats": [
-				{
-					"RapportSpores": 1
-				}
-			]
-		}
-	],
-	"monster": [],
-	"feat": [
-		{
-			"name": "Rapport Spores",
-			"source": "MEAD",
-			"page": 3,
-			"prerequisite": [
-				{
-					"race": [
-						{
-							"name": "myconid"
-						}
-					]
-				}
-			],
-			"entries": [
-				"Myconids cannot speak, but use their spores to communicate telepathically. Travelers to Boletia are often struck by the silence of the city periodically broken by hails in their mind. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You may as an action, extend rapport spores in a 20-foot radius. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren’t undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
-					]
-				}
-			]
-		}
-	]
+  "_meta": {
+    "sources": [
+      {
+        "json": "MEAD",
+        "abbreviation": "MEAD",
+        "full": "Meadiocrity Homebrew v2.0-rc1 (2023-08-20)",
+        "url": "https://discord.gg/K47EvCv8dn",
+        "authors": [
+          "Meadiocrity DM Team"
+        ],
+        "convertedBy": [
+          "numinit",
+          "gr33tz to the Meadiocrity players"
+        ],
+        "color": "#dc8add"
+      }
+    ]
+  },
+  "book": [
+    {
+      "name": "Meadiocrity Campaign Companion",
+      "id": "MEAD",
+      "source": "MEAD",
+      "coverUrl": null,
+      "published": "2023-08-20",
+      "group": "homebrew",
+      "contents": [
+        {
+          "name": "Playing at Meadiocrity",
+          "headers": [
+            "Welcome, Traveler!",
+            "Meet the Outriders",
+            "House Rules"
+          ],
+          "ordinal": {
+            "type": "chapter",
+            "identifier": 1
+          }
+        }
+      ]
+    }
+  ],
+  "bookData": [
+    {
+      "id": "MEAD",
+      "source": "MEAD",
+      "data": [
+        {
+          "type": "section",
+          "name": "Welcome, Traveler!",
+          "id": "Welcome, Traveler!",
+          "source": "MEAD",
+          "page": 2,
+          "entries": [
+            "The Meadiocrity DMs would like to welcome you to Meadiocrity's second large-scale D&D campaign!",
+            "In this campaign, you will be taking on the role of the Outriders, a ragtag group of wildspace explorers forging the final frontier on the Material Plane. This Player's Companion and the associated 5e.tools state should be useful for exploring character options.",
+            "Playing D&D in a large game can be very different from your normal home game. In a large game, you may discover that you get out what you put in, and that finding your place in the community can be incredibly rewarding.",
+            "We encourage you to challenge yourself and your existing playstyle. Spend some time figuring out how you and your character will get along with the rest of the group, don’t be afraid to reroll if you aren’t having fun, and don’t fear talking to players with experience from past campaigns. Everyone here wants to help you, especially if you’re new to the community or new to D&D in general! Who knows, you may make lifelong friends out of it. It’s happened before."
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Meet the Outriders",
+          "id": "Meet the Outriders",
+          "source": "MEAD",
+          "page": 2,
+          "entries": [
+            "It’s been 200 years since the Envoys of the Southern Star defeated The Aphelion, saving Maginus and the rest of reality once and for all. After it was done, The Order was no more. Maginus, now united and left with a fleet of powerful space-faring vessels, set out to explore the stars.",
+            "Contact was made with dozens of other civilizations across the galaxy. Trade was established, alliances were made, and a loose federation was formed, with Maginus serving as a central hub. Without the threat of The Aphelion’s xenocidal return, Maginus prospered and grew, along with every other civilization across wildspace. And with no more Southern Star to travel the universe, spreading the seeds of life, there were untold numbers of new worlds out there to explore and settle.",
+            "That’s where you come in. You are known as Outriders. Volunteers that venture out into frontier space with colony ships filled with settlers, acting as both their explorers and protectors. Whatever new dangers a planet has to offer, you meet it with grit, adaptability, and perseverance.",
+            "Your colony fleet has just touched down on the surface of your new homeworld, rich in flora, fauna, and resources that will help you turn this settlement into a thriving city, and eventually, a planet-spanning civilization.",
+            "However, in the furthest reaches of space, a new war brews. An unknown threat moves from system to system, attacking and subjugating entire planets with alarming efficiency. So much efficiency, that the federation is entirely unaware that anything is amiss..."
+          ]
+        },
+        {
+          "type": "section",
+          "name": "House Rules",
+          "id": "House Rules",
+          "source": "MEAD",
+          "page": 2,
+          "entries": [
+            "{@b The League of Large Campaigns master catalogue spreadsheet is deprecated and will no longer be updated:}",
+            {
+              "type": "list",
+              "items": [
+                "Use our {@b 5e.tools} statefile instead, as it contains an expanded Sane Magic Items list, Wildjammer content, and homebrew.",
+                "Discerning Merchant's Guide is no longer being used given the expanded Sane Magic Items price list."
+              ]
+            },
+            "{@b Scroll crafting has been reverted to RAW}, as much as we enjoyed to see Khoshech’s attempts at drawing scrolls:",
+            {
+              "type": "list",
+              "items": [
+                "Scroll crafting will now require Arcana proficiency per RAW. Scroll use does not, and still simply requires a DC 10+spell level Arcana check if the spell is higher level than you can cast or not on your class list.",
+                "Spellwrought tattoos have been removed as a potentially purchasable item."
+              ]
+            },
+            "{@b You can learn proficiencies} with someone else as a tutor:",
+            {
+              "type": "list",
+              "items": [
+                "It'll be {@b 8 weeks (56 days)} of downtime for you to learn a {@b language, tool, or weapon} proficiency with either a tutor or a study buddy.",
+                "{@b If you opt to learn it from a tutor,} they will need to spend 4 weeks (28 days) with you to teach it to you.",
+                "{@b If you opt to learn it alone,} it'll be 10 weeks (70 days) of downtime.",
+                "If with a study buddy, you both learn the proficiency!",
+                "{@b If you are a tutor} and teach 3 other players a tool, you gain expertise in it."
+              ]
+            },
+            "{@b Rules against using necromancy for reanimation have been removed,} and replaced with the following to simplify things and address denial of service due to too many summons or pets in general:",
+            {
+              "type": "list",
+              "items": [
+                "You can have one entity in initiative other than you, and it always goes before or after you (your call per turn) unless otherwise stated."
+              ]
+            },
+            "The {@table wild magic surge|PHB} table {@b has been altered} to avoid accidentally being a liability to allies:",
+            {
+              "type": "list",
+              "items": [
+                "Whenever you roll on the Wild Magic Surge table, if the effect could negatively affect an ally, it applies at the start of your next turn."
+              ]
+            },
+            "{@b Fairy and Aarakocra flight} is no longer unlimited:",
+            {
+              "type": "list",
+              "items": [
+                "Check {@race fairy|MEAD} or {@race aarakocra|MEAD} for more details. These races get the {@race hadozee|AAG}'s Glide feature too."
+              ]
+            },
+            "{@b Barding (mount armor) has been simplified}, and magic items explicitly do not apply to pets.",
+            {
+              "type": "list",
+              "items": [
+                "Mounts can be armored, but the armor may not be enchanted. Unless the creature is specifically proficient, they need to be trained to gain proficiency in the armor, though training takes half the usual time.",
+                "Pets and summons cannot gain benefits from magic items."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "race": [
+    {
+      "name": "Aarakocra",
+      "source": "MEAD",
+      "page": 3,
+      "lineage": "VRGR",
+      "size": [
+        "M"
+      ],
+      "speed": {
+        "walk": 30,
+        "fly": false
+      },
+      "traitTags": [
+        "Natural Weapon"
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": [
+              "gust of wind"
+            ]
+          },
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Limited Flight",
+          "entries": [
+            "You can use a bonus action to take to the skies for one minute a number of times per day equal to your proficiency bonus. Until the effect ends, you have a flying speed equal to your walking speed. If your flight ends while in the air, you begin to fall immediately. This feature cannot be used and ends immediately if you are suffering from the effects of exhaustion, or if you're wearing medium or heavy armor."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Glide",
+          "entries": [
+            "When you fall at least 10 feet above the ground, you can use your reaction to glide horizontally a number of feet equal to your walking speed, and you take 0 damage from the fall. You determine the direction of the glide."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Talons",
+          "entries": [
+            "You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Wind Caller",
+          "entries": [
+            "Starting at 3rd level, you can cast the {@spell gust of wind} spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.",
+            "Intelligence, Wisdom, or Charisma is your spellcasting ability for when you cast {@spell gust of wind} with this trait (choose when you select this race)."
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": [
+                "str",
+                "dex",
+                "con",
+                "int",
+                "wis",
+                "cha"
+              ],
+              "weights": [
+                2,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": [
+                "str",
+                "dex",
+                "con",
+                "int",
+                "wis",
+                "cha"
+              ],
+              "weights": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "anyStandard": 1
+        }
+      ]
+    },
+    {
+      "name": "Fairy",
+      "source": "MEAD",
+      "page": 3,
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "fey"
+      ],
+      "size": [
+        "S"
+      ],
+      "speed": {
+        "walk": 30,
+        "fly": false
+      },
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "faerie fire"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "enlarge/reduce"
+                ]
+              }
+            }
+          },
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "druidcraft#c"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Fey."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fairy Magic",
+          "entries": [
+            "You know the {@spell druidcraft} cantrip. Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Starting at 5th level, you can also cast the {@spell enlarge/reduce} spell with this trait. Once you cast {@spell faerie fire} or {@spell enlarge/reduce} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+            "Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Limited Flight",
+          "entries": [
+            "You can use a bonus action to take to the skies for one minute a number of times per day equal to your proficiency bonus. Until the effect ends, you have a flying speed equal to your walking speed. If your flight ends while in the air, you begin to fall immediately. This feature cannot be used and ends immediately if you are suffering from the effects of exhaustion, or if you're wearing medium or heavy armor."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Glide",
+          "entries": [
+            "When you fall at least 10 feet above the ground, you can use your reaction to glide horizontally a number of feet equal to your walking speed, and you take 0 damage from the fall. You determine the direction of the glide."
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": [
+                "str",
+                "dex",
+                "con",
+                "int",
+                "wis",
+                "cha"
+              ],
+              "weights": [
+                2,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": [
+                "str",
+                "dex",
+                "con",
+                "int",
+                "wis",
+                "cha"
+              ],
+              "weights": [
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "anyStandard": 1
+        }
+      ]
+    },
+    {
+      "name": "Myconid",
+      "source": "MEAD",
+      "page": 3,
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "heightAndWeight": {
+        "baseHeight": 70,
+        "heightMod": "2d10",
+        "baseWeight": 80,
+        "weightMod": "2d4"
+      },
+      "age": {
+        "mature": 30,
+        "max": 600
+      },
+      "languageProficiencies": [
+        {
+          "common": true,
+          "sylvan": true
+        }
+      ],
+      "entries": [
+        {
+          "name": "Age",
+          "type": "entries",
+          "entries": [
+            "Myconids reach adulthood in their thirties and live several centuries."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "Myconids are usually 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+          ]
+        },
+        {
+          "name": "Languages",
+          "entries": [
+            "You can read and write Common and Sylvan, but cannot speak."
+          ],
+          "type": "entries"
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+          ]
+        },
+        {
+          "name": "Feat",
+          "entries": [
+            "You gain the {@feat rapport spores|mc2} feat."
+          ],
+          "type": "entries"
+        }
+      ],
+      "ability": [
+        {
+          "con": 1,
+          "wis": 1
+        },
+        {
+          "choose": {
+            "weighted": {
+              "from": [
+                "con",
+                "wis"
+              ],
+              "weights": [
+                2
+              ]
+            }
+          }
+        }
+      ],
+      "raceName": "Myconid",
+      "raceSource": "MEAD",
+      "feats": [
+        {
+          "RapportSpores": 1
+        }
+      ]
+    }
+  ],
+  "feat": [
+    {
+      "name": "Rapport Spores",
+      "source": "MEAD",
+      "page": 3,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "myconid"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        "Myconids cannot speak, but use their spores to communicate telepathically. Travelers to Boletia are often struck by the silence of the city periodically broken by hails in their mind. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You may as an action, extend rapport spores in a 20-foot radius. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren’t undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
+          ]
+        }
+      ]
+    }
+  ]
 }
