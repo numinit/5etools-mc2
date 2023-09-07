@@ -1,5 +1,5 @@
 VERSION ?= 2.0
-DOC_ID ?= 36d1ab23-476d-4424-b56d-f57c5690c547
+DOC_ID ?= 4b16acb7-af55-4ce4-819d-c0aefb99073c
 URL ?= https://raw.githubusercontent.com/numinit/5etools-mc2/master/homebrew.json
 
 define JQ_DIST_CMD

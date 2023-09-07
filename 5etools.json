@@ -114,7 +114,7 @@
             {
               "json": "MEAD",
               "abbreviation": "MEAD",
-              "full": "Meadiocrity Homebrew v2.0-rc1 (2023-08-20)",
+              "full": "Meadiocrity Homebrew v2.0 (2023-09-06)",
               "url": "https://discord.gg/K47EvCv8dn",
               "authors": [
                 "Meadiocrity DM Team"
@@ -42446,10 +42446,10 @@
           "docIdLocal": "4b16acb7-af55-4ce4-819d-c0aefb99073c",
           "timeAdded": 1694064714673,
           "checksum": "f7b4c1cd9f3c28c6a19afbdc99a6738e",
-          "url": null,
-          "filename": null,
+          "url": "https://raw.githubusercontent.com/numinit/5etools-mc2/master/homebrew.json",
+          "filename": "homebrew.json",
           "isLocal": false,
-          "isEditable": true
+          "isEditable": false
         },
         "body": {
           "_meta": {
@@ -42457,7 +42457,7 @@
               {
                 "json": "MEAD",
                 "abbreviation": "MEAD",
-                "full": "Meadiocrity Homebrew v2.0-rc1 (2023-08-20)",
+                "full": "Meadiocrity Homebrew v2.0 (2023-09-06)",
                 "url": "https://discord.gg/K47EvCv8dn",
                 "authors": [
                   "Meadiocrity DM Team"
